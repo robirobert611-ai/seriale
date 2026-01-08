@@ -1,0 +1,15 @@
+const episodes = [
+    "Sezon 1 – Episodul 1: Pilot",
+    "Sezon 1 – Episodul 2: Earth Skills",
+    "Sezon 1 – Episodul 3: Earth Kills",
+    "Sezon 2 – Episodul 1: The 48",
+    "Sezon 3 – Episodul 1: Wanheda"
+];
+
+const list = document.getElementById("episodeList");
+
+episodes.forEach(ep => {
+    const li = document.createElement("li");
+    li.textContent = ep;
+    list.appendChild(li);
+});
